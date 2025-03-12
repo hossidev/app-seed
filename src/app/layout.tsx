@@ -1,10 +1,7 @@
 import "./globals.css";
-import { LucideSprout } from "lucide-react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
-import { homePath, ticketsPath } from "@/paths";
+import { Header } from "@/components/ui/header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,32 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav
-          className="
-            supports-backdrop-blur:bg-background/60
-            fixed left-0 right-0 top-0 z-20
-            border-b bg-background/95 backdrop-blur
-            w-full flex py-2.5 px-5 justify-between
-          "
-        >
-          <div>
-            <Link
-              className={buttonVariants({ variant: "ghost" })}
-              href={homePath()}
-            >
-              <LucideSprout className="size-6" />
-              <h1 className="text-xl font-semibold">AppSeed</h1>
-            </Link>
-          </div>
-          <div>
-            <Link
-              className={buttonVariants({ variant: "default" })}
-              href={ticketsPath()}
-            >
-              Tickets
-            </Link>
-          </div>
-        </nav>
+        <Header />
         <main
           className="
             min-h-screen flex-1
