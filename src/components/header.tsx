@@ -2,7 +2,7 @@ import { LucideSprout } from "lucide-react";
 import Link from "next/link";
 import { homePath } from "@/paths";
 import { ticketsPath } from "@/paths";
-import { buttonVariants } from "./button";
+import { buttonVariants } from "./ui/button";
 
 const Header = () => {
   return (

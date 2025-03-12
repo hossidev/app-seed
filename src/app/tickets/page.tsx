@@ -1,5 +1,6 @@
 import { LucideCircleCheck, LucideFileText, LucidePencil } from "lucide-react";
 import Link from "next/link";
+import { Heading } from "@/components/heading";
 import {
   Card,
   CardContent,
@@ -7,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Heading } from "@/components/ui/heading";
 import { initialTickets } from "@/data";
 import { ticketPath } from "@/paths";
 

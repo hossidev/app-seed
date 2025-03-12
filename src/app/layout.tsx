@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Manrope, Plus_Jakarta_Sans } from "next/font/google";
-import { Header } from "@/components/ui/header";
+import { Header } from "@/components/header";
 
 const manrope = Manrope({
   subsets: ["latin"],
