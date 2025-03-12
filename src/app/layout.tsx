@@ -16,8 +16,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "The Road to Next",
-  description: "My Road to Next application ...",
+  title: "AppSeed",
+  description: "The best way to build your app",
 };
 
 export default function RootLayout({
