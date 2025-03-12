@@ -16,17 +16,14 @@ const TicketPage = async ({ params }: TicketPageProps) => {
 
   if (!ticket) {
     return (
-      <div className="flex-1 flex">
-        <Placeholder
-          button={
-            <Button asChild variant="secondary">
-              <Link href={ticketsPath()}>Go to tickets</Link>
-            </Button>
-          }
-          label="Ticket not found"
-        />
-        <Placeholder label="Ticket not found" />
-      </div>
+      <Placeholder
+        button={
+          <Button asChild variant="outline">
+            <Link href={ticketsPath()}>Go to tickets</Link>
+          </Button>
+        }
+        label="Ticket not found"
+      />
     );
   }
 

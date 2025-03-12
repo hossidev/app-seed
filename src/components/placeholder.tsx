@@ -4,7 +4,7 @@ import { cloneElement } from "react";
 type PlaceholderProps = {
   label: string;
   icon?: React.ReactElement<React.SVGProps<SVGSVGElement>, "svg">;
-  button?: React.ReactNode;
+  button?: React.ReactElement<React.ButtonHTMLAttributes<HTMLButtonElement>>;
 };
 
 const Placeholder = ({
@@ -18,7 +18,9 @@ const Placeholder = ({
         className: "size-10 text-muted-foreground w-16 h-16",
       })}
       <h2 className="text-lg text-center">{label}</h2>
-      {button}
+      {cloneElement(button, {
+        className: "h-10",
+      })}
     </div>
   );
 };
