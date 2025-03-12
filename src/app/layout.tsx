@@ -1,4 +1,5 @@
 import "./globals.css";
+import { LucideSprout } from "lucide-react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
@@ -41,10 +42,11 @@ export default function RootLayout({
         >
           <div>
             <Link
-              className={buttonVariants({ variant: "outline" })}
+              className={buttonVariants({ variant: "ghost" })}
               href={homePath()}
             >
-              Home
+              <LucideSprout className="size-6" />
+              <h1 className="text-xl font-semibold">AppSeed</h1>
             </Link>
           </div>
           <div>
