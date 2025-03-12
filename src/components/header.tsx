@@ -2,8 +2,8 @@ import { LucideSprout } from "lucide-react";
 import Link from "next/link";
 import { homePath } from "@/paths";
 import { ticketsPath } from "@/paths";
+import { ThemeSwitcher } from "./theme/theme-switcher";
 import { buttonVariants } from "./ui/button";
-
 const Header = () => {
   return (
     <nav
@@ -14,7 +14,7 @@ const Header = () => {
           w-full flex py-2.5 px-5 justify-between
         "
     >
-      <div>
+      <div className="flex items-center gap-x-2">
         <Link
           className={buttonVariants({ variant: "ghost" })}
           href={homePath()}
@@ -23,7 +23,8 @@ const Header = () => {
           <h1 className="text-xl font-semibold">AppSeed</h1>
         </Link>
       </div>
-      <div>
+      <div className="flex align-items gap-x-2">
+        <ThemeSwitcher />
         <Link
           className={buttonVariants({ variant: "default" })}
           href={ticketsPath()}
