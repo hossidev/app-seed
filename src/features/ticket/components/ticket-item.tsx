@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { LucideArrowUpRightFromSquare } from "lucide-react";
+import { LucideArrowUpRightFromCircle } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -16,7 +16,7 @@ const TicketItem = ({ ticket, isDetail }: TicketItemProps) => {
   const detailButton = (
     <Button variant="outline" size="icon" asChild>
       <Link href={ticketPath(ticket.id)}>
-        <LucideArrowUpRightFromSquare className="h-4 w-4" />
+        <LucideArrowUpRightFromCircle className="h-4 w-4" />
       </Link>
     </Button>
   );
