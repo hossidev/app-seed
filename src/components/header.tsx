@@ -1,4 +1,4 @@
-import { LucideSprout } from "lucide-react";
+import { LucideTicket } from "lucide-react";
 import Link from "next/link";
 import { homePath } from "@/paths";
 import { ticketsPath } from "@/paths";
@@ -19,8 +19,8 @@ const Header = () => {
           className={buttonVariants({ variant: "ghost" })}
           href={homePath()}
         >
-          <LucideSprout className="size-6" />
-          <h1 className="text-xl font-semibold">AppSeed</h1>
+          <LucideTicket className="size-6" />
+          <h1 className="text-xl font-semibold">Ticket Bounty</h1>
         </Link>
       </div>
       <div className="flex align-items gap-x-2">
